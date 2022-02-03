@@ -1,3 +1,19 @@
 .nav {
-    
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    padding: 0 35px;
+    &__elem {
+        display: block;
+        padding: 10px 35px;
+        color: #16578d;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Open Sans';
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            color: #79bdf1;
+        }
+    }
 }

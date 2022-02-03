@@ -1,11 +1,42 @@
 .header {
+    position: relative;
+    background-color: #f0f8ff;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
     &__logo {
-
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 70px;
     }
     &__nav {
 
     }
     &__btn {
-        
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 206px;
+        height: 40px;
+        display: none;
+    }
+    &.fixed {
+        background-color: rgb(240, 248, 255);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        .header__btn {
+            display: block;
+        }
     }
 }
