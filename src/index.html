@@ -4,10 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch152.png">
+  <link rel="apple-touch-startup-image" href="img/apple-touch-startup.png">
+  <meta name="msapplication-TileImage" content="img/ms-app.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>New site</title>
+  <!--metatextblock-->
+  <title>Онлайн-занятия для подготовки детей к школе</title>
+  <meta name="description" content="Полноценная подготовка к школе в атмосфере любви и заботы. Без домашних заданий и нервов родителей. Бережно подбираем под каждого ребенка, подходящие его способностям и возможностям программу и учебную группу, не более 3 человек. Онлайн занятия для детей от 4 до 7 лет. Запишите ребенка на первое занятие бесплатно." />
+  <meta property="og:url" content="https://detidoma-online.ru" />
+  <meta property="og:title" content="Онлайн-занятия для подготовки детей к школе" />
+  <meta property="og:description" content="Полноценная подготовка к школе в атмосфере любви и заботы. Без домашних заданий и нервов родителей. Бережно подбираем под каждого ребенка, подходящие его способностям и возможностям программу и учебную группу, не более 3 человек. Онлайн занятия для детей от 4 до 7 лет. Запишите ребенка на первое занятие бесплатно." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og.png" />
+  <link rel="canonical" href="https://detidoma-online.ru">
+  <!--/metatextblock-->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -16,9 +30,8 @@
 <body>
   <div class="site-container">
     @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
+    
     @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
