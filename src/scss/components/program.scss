@@ -1,0 +1,81 @@
+.program {
+    padding-top: 105px;
+    &__content {
+
+    }
+    &__title {
+        color: #16578d;
+        font-size: 64px;
+        font-family: 'Pattaya',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        &-small {
+            color: #16578d;
+            font-size: 32px;
+            font-family: 'Pattaya',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            max-width: 631px;
+            margin-bottom: 30px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            max-width: 657px;
+            color: #16578d;
+            font-size: 18px;
+            font-family: 'Open Sans',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            padding-top: 40px;
+        }
+    }
+    &__age-info {
+        div {
+            border-radius: 30px;
+            background-image: linear-gradient(180deg, rgba(161,207,245,1) 0%, rgba(179,242,235,1) 47%, rgba(250,246,190,1) 98%);
+            box-shadow: -4px 4px 6px 0px rgba(121, 189, 241, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            &:first-child {
+                margin-bottom: 30px;
+            }
+            p {
+                color: #16578d;
+                font-size: 18px;
+                font-family: 'Open Sans',Arial,sans-serif;
+                line-height: 1.55;
+                font-weight: 400;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &__blocks {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        img:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__line {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        top: 0;
+    }
+}
