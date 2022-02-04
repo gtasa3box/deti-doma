@@ -17,4 +17,13 @@
             background-color: #16578d;
         }
     }
+    &_blue {
+        color: #fffbe8;
+        background-color: #79bdf1;
+        &:hover {
+            background-color: #fae58a;
+            color: #16578d;
+            font-size: 16px;
+        }
+    }
 }
