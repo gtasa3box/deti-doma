@@ -64,6 +64,8 @@
             font-family: 'Pattaya',Arial,sans-serif;
             line-height: 1.55;
             font-weight: 400;
+            position: relative;
+            z-index: 2;
         }
     }
     &__btn {
