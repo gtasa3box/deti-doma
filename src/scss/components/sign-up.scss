@@ -1,0 +1,156 @@
+.sign-up {
+    padding-top: 105px;
+    &__content {
+
+    }
+    &__title {
+        max-width: 760px;
+        margin-bottom: 60px;
+    }
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__steps {
+        width: 48%;
+    }
+    &__step {
+        color: #16578d;
+        font-size: 18px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 70px;
+        min-height: 50px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../img/sign-up/1.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 52px;
+            height: 52px;
+        }
+        &_2 {
+            &:before {
+                background-image: url(../img/sign-up/2.png);
+            }
+        }
+        &_3 {
+            &:before {
+                background-image: url(../img/sign-up/3.png);
+            }
+        }
+        &_4 {
+            &:before {
+                background-image: url(../img/sign-up/4.png);
+            }
+        }
+    }
+    &__form {
+        width: 48%;
+    }
+}
+
+.form-sign-up {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    input[type=name], input[type=text], input[type=number]  {
+        color: #16578d;
+        border: 1px solid #b4dbfa;
+        background-color: #fff;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        font-size: 16px;
+        font-weight: 400;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        line-height: 1.33;
+        padding: 0 20px;
+        font-family: 'Pattaya',Arial,sans-serif;
+        margin-bottom: 20px;
+        &::placeholder {
+            color: #16578d;
+            opacity: 0.7;
+        }
+    }
+    input[type=number] {
+        padding: 0 20px 0 50px;
+    }
+    select {
+        color: #16578d;
+        border: 1px solid #b4dbfa;
+        background-color: #fff;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        font-size: 16px;
+        font-weight: 400;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        line-height: 1.33;
+        padding: 0 45px 0 20px;
+        font-family: 'Pattaya',Arial,sans-serif;
+        appearance: none;
+        cursor: pointer;
+    }
+    option {
+        background-color: #b4dbfa;
+        cursor: pointer;
+    }
+    &__select {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        &::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: #000 transparent transparent transparent;
+            border-top-color: #16578d;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            pointer-events: none;
+        }
+    }
+    p {
+        color: #16578d;
+        font-weight: 400;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 18px;
+        padding-bottom: 5px;
+
+    }
+    .iti {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        width: 160px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+        .btn {
+            font-size: 16px;
+            outline: none;
+            border: none;
+        }
+    }
+}
