@@ -1,0 +1,15 @@
+.title {
+    font-size: 52px;
+    line-height: 1.23;
+    font-family: 'Pattaya',Arial,sans-serif;
+    font-weight: 400;
+    color: #16578d;
+    &_center {
+        text-align: center;
+    }
+    &_info {
+        display: block;
+        font-size: 32px;
+        margin-top: 12px;
+    }
+}
