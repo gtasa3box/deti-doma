@@ -37,3 +37,9 @@ $('.slider-teachers').slick({
       }
     ]
   });
+
+//tabs
+$('.questions__question').on('click', function(){
+  $(this).toggleClass('active')
+  $($(this).data('target')).slideToggle()
+});

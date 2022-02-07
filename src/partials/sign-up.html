@@ -11,7 +11,7 @@
                 </div>
                 <div class="sign-up__form">
                     <form action="" class="form-sign-up">
-                        <input name="name" type="name" placeholder="Ваше имя">
+                        <input name="name" type="name" placeholder="Ваше имя" required>
 
                         <p>Возраст ребёнка</p>
                         <div class="form-sign-up__select">
@@ -25,7 +25,7 @@
 
                         <label>
                             <p>Укажите ваш телефон для связи</p>
-                            <input name="tel" type="number" id="phone" >
+                            <input name="tel" type="number" id="phone" required>
                         </label>
 
                         <label>
@@ -33,7 +33,7 @@
                             <input name="city" type="text">
                         </label>
 
-                        <input class="checkbox" name="polit" type="checkbox" id="polit">
+                        <input class="checkbox" name="polit" type="checkbox" id="polit" required>
                         <label class="checkbox__label" for="polit">
                             <div>Я даю согласие с&nbsp;<a href="/politika">Политикой в отношении обработки персональных данных</a></div> 
                         </label>
@@ -43,6 +43,10 @@
                         </div>
                     </form>
                 </div>
+            </div>
+
+            <div class="sign-up__banner">
+                <p>Будущее наших детей мы создаем сегодня</p>
             </div>
         </div>
     </div>
