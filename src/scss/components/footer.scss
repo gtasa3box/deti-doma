@@ -1,0 +1,79 @@
+.footer {
+    background-color: #16578d;
+    &__content {
+
+    }
+    &__topelem {
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        color: #ffffff;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 14px;
+        line-height: 1.35;
+        font-weight: 500;
+        position: relative;
+        a {
+            color: #ffffff; 
+        }
+    }
+    &__polit {
+        position: absolute;
+        left: 40px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__nav {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__nav-elem {
+        display: block;
+        margin: 0 15px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__up-btn {
+        position: absolute;
+        right: 40px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__bottomelem {
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 45px;
+        padding-bottom: 15px
+    }
+    &__logo {
+        width: 100px;
+        height: 100px;
+        a {
+            background-image: url(../img/ms-app.png);
+        }
+    }
+    &__cop {
+        font-size: 14px;
+        color: white;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-family: 'Open Sans',Arial,sans-serif;
+        padding-top: 22px;
+        padding-bottom: 6px;
+        opacity: .7;
+    }
+}
