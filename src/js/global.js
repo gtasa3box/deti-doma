@@ -43,3 +43,21 @@ $('.questions__question').on('click', function(){
   $(this).toggleClass('active')
   $($(this).data('target')).slideToggle()
 });
+
+
+//fixed header
+$(function() {
+  var header = $(".header");
+  var headerFantom = $(".header__fantom");
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 300) {
+          header.addClass("fixed");
+          headerFantom.addClass("active");
+      } else {
+          header.removeClass("fixed");
+          headerFantom.removeClass("active");
+      }
+  });
+});

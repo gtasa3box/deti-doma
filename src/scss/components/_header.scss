@@ -40,4 +40,11 @@
             display: block;
         }
     }
+    &__fantom {
+        display: none;
+        height: 80px;
+        &.active {
+            display: block;
+        }
+    }
 }
