@@ -2,27 +2,65 @@
     position: relative;
     .wrapper {
         max-width: none;
+        @media (max-width:980px) {
+            padding: 0 40px;
+        }
+        @media (max-width:600px) {
+            padding: 0 20px;
+        }
     }
     &__content {
         height: 890px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        @media (max-width:980px) {
+            height: 100vh;
+            width: 100%;
+            align-items: flex-start;
+            min-height: 1000px;
+        }
+        @media (max-width:600px) {
+            height: 790px;
+            min-height: 550px;
+        }
     }
     &__main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width:980px) {
+            flex-direction: column;
+            align-items: initial;
+            width: 100%;
+        }
     }
     &__text {
         max-width: 940px;
         margin-left: 628px;
+        @media (max-width:980px) {
+            margin-left: 0;
+            margin: 0 auto;
+            padding-top: 155px;
+        }
         h1 {
             color: #16578d;
             font-size: 87px;
             font-family: 'Pattaya',Arial,sans-serif;
             line-height: 1.15;
             font-weight: 400;
+            @media (max-width:1199px) {
+                font-size: 60px;
+            }
+            @media (max-width:980px) {
+                font-size: 50px;
+                max-width: 545px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            @media (max-width:600px) {
+                font-size: 39px;
+            }
             span {
                 position: relative;
                 z-index: 2;
@@ -39,6 +77,26 @@
                     top: 50%;
                     transform: translate(-48%,-48%);
                     z-index: -1;
+                    @media (max-width:1552px) and (min-width:1382px) {
+                        top: 74%;
+                        transform: translate(-243%, -48%)
+                    }
+                    @media (max-width:1199px) and (min-width:1148px) {
+                        top: 74%;
+                        transform: translate(-223%, -48%)
+                    }
+                    @media (max-width:1199px) {
+                        width: 239px;
+                        height: 81px;
+                    }
+                    @media (max-width:980px) {
+                        width: 176px;
+                        height: 72px;
+                    }
+                    @media (max-width:600px) {
+                        width: 130px;
+                        height: 62px;
+                    }
                 }
             }
         }
@@ -49,6 +107,12 @@
             line-height: 1.55;
             font-weight: 400;
             margin-top: 60px;
+            @media (max-width:980px) {
+                font-size: 18px;
+                max-width: 364px;
+                text-align: center;
+                margin: 60px auto 0;
+            }
         }
     }
     &__promo {
@@ -58,6 +122,16 @@
         position: absolute;
         bottom: 100px;
         right: 100px;
+        @media (max-width:980px) {
+            align-items: center;
+            right: 15px;
+            bottom: 15px;
+        }
+        @media (max-width:600px) {
+            flex-direction: column;
+            align-items: flex-end;
+            width: 80%;
+        }
         p {
             color: #16578d;
             font-size: 32px;
@@ -66,6 +140,13 @@
             font-weight: 400;
             position: relative;
             z-index: 2;
+            @media (max-width:980px) {
+                font-size: 20px;
+            }
+            @media (max-width:600px) {
+                margin-bottom: 20px;
+                text-align: right;
+            }
         }
     }
     &__btn {
@@ -80,6 +161,10 @@
         position: absolute;
         top: 0;
         right: 100px;
+        @media (max-width:980px) {
+            left: 33px;
+            top: 58px;
+        }
         a {
             display: block;
             background-image: url(../img/intro/age.svg);
@@ -90,6 +175,10 @@
             height: 110px;
             animation: anim-age 2s infinite linear;
             backface-visibility: hidden;
+            @media (max-width:980px) {
+                width: 141px;
+                height: 82px;
+            }
         }
         @keyframes anim-age {
         0% {opacity:1;transform:translateX(0px)translateY(0px)rotate(0deg)scale(1,1);animation-timing-function:linear;}
@@ -105,6 +194,19 @@
         left: -246px;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width:980px) {
+            position: relative;
+            width: 640px;
+            height: 549px;
+            top: initial;
+            transform: translate(0);
+            left: 0;
+            order: 1;
+        }
+        @media (max-width:600px) {
+            width: 288px;
+            height: auto;
+        }
         img {
             transition: 0.3s ease;
             width: 100%;
