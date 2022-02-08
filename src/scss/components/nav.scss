@@ -3,6 +3,11 @@
     justify-content: space-between;
     width: 1060px;
     padding: 0 35px;
+    @media (max-width:980px) {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
     &__elem {
         display: block;
         padding: 10px 35px;
@@ -12,6 +17,9 @@
         font-family: 'Open Sans';
         transition: 0.3s ease;
         cursor: pointer;
+        @media (max-width:980px) {
+            padding: 10px 0;
+        }
         &:hover {
             color: #79bdf1;
         }

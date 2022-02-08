@@ -61,3 +61,10 @@ $(function() {
       }
   });
 });
+
+//mob-header
+$('.burger').on('click', function(){
+  $(this).toggleClass('active')
+  $($(this).data('target')).toggleClass('active')
+  $('body').toggleClass('hidden');
+});
