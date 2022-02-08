@@ -175,4 +175,24 @@
             border: none;
         }
     }
+    //popups
+    &_popup {
+        p {
+            font-size: 18px;
+            line-height: 1.55;
+            font-family: 'Pattaya',Arial,sans-serif;
+            font-weight: 400;
+            color: #16578d;
+        }
+        .checkbox__label {
+            div {
+                font-size: 13px;
+                line-height: 1.55;
+                a {
+                    font-size: 13px;
+                    line-height: 1.55;
+                }
+            }
+        }
+    }
 }

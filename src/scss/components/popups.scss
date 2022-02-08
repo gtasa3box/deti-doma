@@ -1,0 +1,22 @@
+.popup-backcall {
+    display: none; 
+    max-width: 560px;
+    &__title {
+        font-family: 'Pattaya',sans-serif;
+        margin-bottom: 11px;
+        font-size: 36px;
+        line-height: 1.23;
+        font-weight: 400;
+        color: #16578d;
+        text-align: center;
+    }
+    &__info {
+        font-family: 'Open Sans',sans-serif;
+        font-size: 14px;
+        line-height: 1.55;
+        font-weight: 400;
+        color: #16578d;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
